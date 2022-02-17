@@ -1,0 +1,54 @@
+.faq {
+	margin-top: -182px;
+	padding-top: 295px;
+	padding-bottom: 111px;
+	z-index: 1;
+	background-color: #fff;
+}
+
+.faq__title {
+	font-size: 42px;
+	line-height: 1.48;
+	text-align: center;
+	letter-spacing: 0.8px;
+	color: $main-color;
+}
+.faq__inner {
+	margin-top: 58px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 35px;
+}
+.faq__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	&:hover .faq__card-icon {
+		background-color: $accent-color;
+	}
+
+	&:hover .faq__card-icon path {
+		fill: $color-white;
+	}
+}
+.faq__card-icon {
+	background: rgba(88, 190, 191, 0.2);
+	height: 70px;
+	width: 70px;
+	border-radius: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 15px;
+
+	& path {
+		fill: $color-green;
+		transition: 0.3s ease;
+	}
+}
+.faq__card-icon .faq__card-title {
+}
+.faq__card-content {
+}
