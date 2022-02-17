@@ -1,0 +1,11 @@
+@import './logo';
+
+.nav__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 33px;
+}
+
+@import './navigation';
