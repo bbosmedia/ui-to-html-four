@@ -1,0 +1,62 @@
+.footer {
+	padding-top: 96px;
+	padding-bottom: 82px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+        gap: 20px;
+	}
+}
+
+.footer__card {
+	flex: 1;
+	&.main {
+		flex: 1.8;
+	}
+}
+
+.footer__logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+.footer__logo-name {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	color: #323232;
+}
+.footer__card-content-main {
+	font-size: 16px;
+	line-height: 1.69;
+	letter-spacing: 1.15px;
+	color: $main-color;
+	margin-bottom: 15px;
+	max-width: 300px;
+}
+.socials {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+.footer__card-title {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 31px;
+	letter-spacing: 0.5px;
+	color: $main-color;
+	margin-bottom: 18px;
+}
+.footer__card-link {
+	font-size: 14px;
+	line-height: 1.93;
+	letter-spacing: 0.5px;
+	color: $main-color;
+    display: block;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 13px;
+    &:hover{
+        color: $accent-color;
+    }
+}

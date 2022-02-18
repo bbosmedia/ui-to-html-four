@@ -1,0 +1,55 @@
+.getexperience {
+	width: 100%;
+	background-image: url('../images/background.png');
+	height: 100%;
+	background-repeat: none;
+	background-size: cover;
+	background-position: bottom center;
+	height: 492px;
+	.container {
+		position: relative;
+		height: 100%;
+	}
+}
+
+.getexperience__content {
+	height: 100%;
+	max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.getexperience__title {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.48;
+	letter-spacing: 0.8px;
+	color: $color-white;
+	margin-bottom: 15px;
+}
+.getexperience__content-text {
+	font-size: 16px;
+	line-height: 1.69;
+	letter-spacing: 1.15px;
+	color: #ffffff;
+}
+.getexperience__button {
+	height: 58px;
+	width: 172px;
+	border-radius: 50px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	color: #323232;
+    margin-top: 30px;
+    margin-bottom: 55px;
+}
+.getexperience__img {
+	position: absolute;
+	right: 50px;
+	bottom: 0px;
+}
