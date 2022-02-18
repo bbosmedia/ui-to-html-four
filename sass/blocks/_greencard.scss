@@ -1,5 +1,5 @@
 .inner__card {
-    margin-top: -232px;
+	margin-top: -232px;
 	height: 464px;
 	background-color: #58bebf;
 	border-radius: 20px;
@@ -7,7 +7,7 @@
 	align-items: center;
 	overflow: hidden;
 	position: relative;
-    gap: 20px;
+	gap: 20px;
 
 	& .oval {
 		position: absolute;
@@ -28,8 +28,8 @@
 
 	& .content {
 		padding: 20px;
-        padding-left: 50px;
-        max-width: 400px;
+		padding-left: 50px;
+		max-width: 400px;
 	}
 
 	& h2 {
@@ -45,6 +45,47 @@
 		line-height: 1.69;
 		letter-spacing: 1.15px;
 		color: #ffffff;
+	}
+
+	@media screen and(max-width: 780px) {
+		margin-top: 0px;
+		height: auto;
+		flex-direction: column;
+		& > div {
+			width: 100%;
+		}
+
+		& .card__image {
+			order: 1;
+			width: 100%;
+
+			left: -30px;
+			padding-bottom: 0px;
+			top: 0px;
+			bottom: 0px;
+			margin-bottom: -20px;
+			& > img {
+				position: relative;
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		& .content {
+			width: 100%;
+			max-width: 600px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+	}
+
+	@media screen and (max-width: 430px) {
+		& h2 {
+			font-size: 32px;
+		}
 	}
 }
 
@@ -76,17 +117,36 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 430px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-items: center;
+		margin: 0px;
+		margin-top: 30px;
+		gap: 30px;
+		& a{
+			width: 200px;
+		}
+	}
 }
 
-.card__image{
-    width: 50%;
-    position: relative;
-    height: 100%;
-    & img{
-        position: absolute;
-        top: 59px;
-        right: 0px;
-        border-radius: 20px;
-        width: 802px;
-    }
+@media screen and(max-width: 430px) {
+	.green__card-buttons a:nth-child(1){
+		margin-right: 0px;
+	}
+}
+
+.card__image {
+	width: 50%;
+	position: relative;
+	height: 100%;
+	& img {
+		position: absolute;
+		top: 59px;
+		right: 0px;
+		border-radius: 20px;
+		width: 802px;
+	}
 }

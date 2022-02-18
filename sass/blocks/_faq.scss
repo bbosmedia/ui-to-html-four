@@ -4,6 +4,11 @@
 	padding-bottom: 111px;
 	z-index: 1;
 	background-color: #fff;
+
+	@media screen and (max-width: 600px) {
+		margin-top: 0px;
+		padding-top: 50px;
+	}
 }
 
 .faq__title {
@@ -12,12 +17,22 @@
 	text-align: center;
 	letter-spacing: 0.8px;
 	color: $main-color;
+	@media screen and (max-width: 460px) {
+		font-size: 32px;
+	}
 }
 .faq__inner {
 	margin-top: 58px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 35px;
+
+	@media screen and (max-width: 880px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media screen and (max-width: 460px) {
+		grid-template-columns: 1fr;
+	}
 }
 .faq__card {
 	display: flex;
