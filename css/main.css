@@ -1084,6 +1084,10 @@ body {
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1; } }
+  @media screen and (max-width: 350px) {
+    .footer__card {
+      min-width: none;
+      width: 100%; } }
 
 .footer__logo {
   display: -webkit-box;
